@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Realistic Weather App</title>
+  
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="weather-card animate__animated animate__fadeIn">
+      <h1> Weather App</h1>
+      
+      <div class="search-section">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="city-input-btn" title="Get Weather"><i class="fas fa-search"></i></button>
+        <button id="geoBtn" title="Use My Location"><i class="fas fa-map-marker-alt"></i></button>
+      </div>
+
+      <div class="unit-toggle">
+        <button id="unitC" class="active">°C</button>
+        <button id="unitF">°F</button>
+      </div>
+
+      <div id="weather-info" style="display:none;">
+        <h2 id="city-name"></h2>
+        <p id="date"></p>
+
+        <div class="weather-main">
+          <img id="weather-icon" src="" alt="Weather Icon" />
+          <div>
+            <p id="temperature" class="temperature"></p>
+            <p id="description" class="description"></p>
+          </div>
+        </div>
+
+        <div class="weather-details">
+          <p><i class="fas fa-tint"></i> Humidity: <span id="humidity"></span>%</p>
+          <p><i class="fas fa-tachometer-alt"></i> Pressure: <span id="pressure"></span> hPa</p>
+          <p><i class="fas fa-wind"></i> Wind Speed: <span id="wind-speed"></span> m/s</p>
+          <p><i class="fas fa-sun"></i> Sunrise: <span id="sunrise"></span></p>
+          <p><i class="fas fa-moon"></i> Sunset: <span id="sunset"></span></p>
+        </div>
+      </div>
+
+      <p id="errorMsg" class="error-message"></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.min.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
